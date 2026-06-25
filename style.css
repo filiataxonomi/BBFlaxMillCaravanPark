@@ -1,0 +1,286 @@
+/* ============================================================
+   Flax Mill Caravan Park — public record site
+   Shared stylesheet. Black & white, minimal.
+   Edit colours / fonts / spacing here and every page updates.
+   ============================================================ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Avenir Next', 'Avenir', system-ui, -apple-system, sans-serif;
+  background: #fff;
+  color: #111;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ---------- PERSISTENT TOP MENU ----------
+   Stays pinned to the top of every page when you scroll. */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #111;
+}
+
+.topbar-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.site-name {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #999;
+  padding: 0.9rem 0 0.6rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  padding-bottom: 0.8rem;
+  list-style: none;
+}
+
+.menu a {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #444;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover { color: #111; }
+
+/* the page you are currently on */
+.menu a.current {
+  color: #111;
+  font-weight: 700;
+  border-bottom: 2px solid #111;
+}
+
+/* ---------- PAGE HEADER ---------- */
+header.page-head {
+  padding: 2.6rem 0 1.6rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.kicker {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: #aaa;
+  margin-bottom: 0.6rem;
+}
+
+header.page-head h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 0.9rem;
+}
+
+header.page-head p {
+  font-size: 0.95rem;
+  color: #444;
+  max-width: 680px;
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- BODY CONTENT ---------- */
+main { padding: 2rem 0 3rem; }
+
+main h2 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 2.2rem 0 0.8rem;
+  line-height: 1.3;
+}
+
+main h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 1.6rem 0 0.4rem;
+}
+
+main p {
+  font-size: 0.95rem;
+  color: #222;
+  margin-bottom: 0.9rem;
+  max-width: 680px;
+}
+
+main ul, main ol { margin: 0.4rem 0 1.1rem 1.4rem; max-width: 680px; }
+main li { margin-bottom: 0.4rem; }
+
+main a { color: #111; }
+
+/* a quote from a Shire document */
+blockquote {
+  border-left: 3px solid #111;
+  margin: 0.9rem 0 1.1rem;
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  color: #333;
+  font-style: italic;
+  max-width: 680px;
+}
+
+/* ---------- TABLES (monthly data) ---------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 680px;
+  margin: 0.6rem 0 1.4rem;
+  font-size: 0.86rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.4rem 0.7rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.7rem;
+  color: #888;
+  border-bottom: 1px solid #111;
+}
+
+tr.total td { font-weight: 700; border-bottom: 1px solid #111; }
+
+/* ---------- A SINGLE MONTH BLOCK ---------- */
+.month {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.month .src {
+  font-size: 0.72rem;
+  color: #999;
+  margin-bottom: 0.6rem;
+}
+
+.month .src a { color: #666; }
+
+.figures {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+/* ---------- DOWNLOAD / SOURCE BUTTONS ---------- */
+.dl-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #111;
+  border: 1px solid #111;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
+  text-decoration: none;
+  margin: 0.3rem 0.4rem 0.3rem 0;
+}
+
+.dl-link:hover { background: #111; color: #fff; }
+
+/* ---------- DOCUMENT / SOURCE CARDS ---------- */
+.doc-card {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.doc-card .date {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #bbb;
+  margin-bottom: 0.2rem;
+}
+
+.doc-card strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.doc-card p { font-size: 0.85rem; color: #555; margin-bottom: 0.4rem; }
+
+/* ---------- NOTICE IMAGE (front page) ---------- */
+.notice {
+  margin: 1.6rem 0 2rem;
+}
+
+.notice img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border: 1px solid #e6e6e6;
+}
+
+.notice figcaption {
+  font-size: 0.78rem;
+  color: #777;
+  margin-top: 0.6rem;
+  max-width: 520px;
+}
+
+.notice figcaption a { color: #555; }
+
+/* ---------- HOME MENU CARDS ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #ddd;
+  border: 1px solid #ddd;
+  margin: 1.6rem 0;
+}
+
+.cards a {
+  background: #fff;
+  padding: 1.2rem 1.3rem;
+  text-decoration: none;
+  color: #111;
+}
+
+.cards a:hover { background: #fafafa; }
+
+.cards .num {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: #bbb;
+}
+
+.cards strong { display: block; font-size: 1rem; margin: 0.2rem 0 0.3rem; }
+.cards span { font-size: 0.82rem; color: #666; }
+
+/* ---------- FOOTER ---------- */
+footer {
+  border-top: 1px solid #111;
+  padding: 1.4rem 0 2.4rem;
+  font-size: 0.74rem;
+  color: #999;
+}
+
+footer a { color: #666; }
+.updated { margin-top: 0.4rem; }
+
+/* ---------- SMALL SCREENS ---------- */
+@media (max-width: 640px) {
+  .cards { grid-template-columns: 1fr; }
+  header.page-head h1 { font-size: 1.3rem; }
+  .menu { gap: 1rem; }
+}
