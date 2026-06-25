@@ -195,6 +195,25 @@ tr.total td { font-weight: 700; border-bottom: 1px solid #111; }
 
 .dl-link:hover { background: #111; color: #fff; }
 
+/* ---------- EMBEDDED SCROLLABLE PDF ---------- */
+.docview {
+  width: 100%;
+  height: 640px;
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0.6rem 0 0.8rem;
+}
+
+/* stacked page images — always visible, no tapping */
+.doc-pages img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border: 1px solid #ddd;
+  margin: 0 0 0.6rem;
+}
+
 /* ---------- DOCUMENT / SOURCE CARDS ---------- */
 .doc-card {
   padding: 1rem 0;
