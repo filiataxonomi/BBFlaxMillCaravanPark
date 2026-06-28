@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monthly Data — Flax Mill Caravan Park</title>
+  <title>Monthly Caravan Park Data — Flax Mill Caravan Park</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,52 +26,208 @@
 
     <header class="page-head">
       <div class="kicker">Public Record — Caravan Park Booking Data</div>
-      <h1>Monthly Data Collation — Flax Mill Caravan Park</h1>
-      <p>A month-by-month record of CMCA caretaker reports and booking data for the Flax Mill Caravan Park, taken directly from Shire of Boyup Brook Ordinary Council Meeting minutes and agendas. It shows that CMCA repeatedly documented demand for longer-term worker accommodation due to the housing shortage — before and alongside the introduction of the Short Term Stay Policy and the eviction notices.</p>
-      <p>Period: June 2025 – May 2026. Revenue-sharing agreement: the Shire receives 73% of gross income, CMCA retains 27%.</p>
+      <h1>Monthly caravan park data</h1>
+      <p>Every month the caravan park's bookings and income are reported to Council. From August 2025 onward, the caretaker's report recorded — in nearly every month — demand for longer-term accommodation from essential workers and from people with nowhere else to live.</p>
+      <p>Every figure below is taken directly from Shire of Boyup Brook Council minutes and agendas. The income is shared 73% to the Shire, 27% to CMCA.</p>
     </header>
 
     <main>
 
-      <a class="dl-link" href="documents/monthly-data-collation.pdf">Download full collation (PDF)</a>
-
-      <h2>Summary table</h2>
+      <h2>Summary — at a glance</h2>
       <table>
         <thead>
-          <tr><th>Month</th><th>Nights</th><th>Gross income</th><th>Shire share</th><th>CMCA %</th><th>Housing / workforce noted</th></tr>
+          <tr><th>Month</th><th>Nights</th><th>Gross income</th><th>Shire share</th><th>Housing note in report</th></tr>
         </thead>
         <tbody>
-          <tr><td>Jun 2025</td><td>207</td><td>$5,747.00</td><td>$4,195.31</td><td>47%</td><td>No</td></tr>
-          <tr><td>Jul 2025</td><td>219</td><td>$5,272.00</td><td>$3,848.56</td><td>52%</td><td>No</td></tr>
-          <tr><td>Aug 2025</td><td>213</td><td>$5,236.00</td><td>$3,822.28</td><td>30%</td><td>Yes — first appearance</td></tr>
-          <tr><td>Sep 2025</td><td>391</td><td>$11,080.00</td><td>$8,088.40</td><td>33%</td><td>Yes</td></tr>
-          <tr><td>Oct 2025</td><td>464</td><td>$12,296.00</td><td>$8,976.08</td><td>N/S</td><td>Yes</td></tr>
-          <tr><td>Nov 2025</td><td>328</td><td>$8,562.00</td><td>$6,250.26</td><td>33%</td><td>Yes</td></tr>
-          <tr><td>Dec 2025</td><td>476</td><td>$10,838.00</td><td>$7,911.74</td><td>43%</td><td>Yes</td></tr>
-          <tr><td>Jan 2026</td><td>544</td><td>$13,340.00</td><td>$9,738.20</td><td>45%</td><td>Yes — "significant increase in requests for permanent residency"</td></tr>
-          <tr><td>Feb 2026</td><td>782</td><td>$20,370.00</td><td>$14,870.10</td><td>31%</td><td>Yes — workforce plus infrastructure workers</td></tr>
-          <tr><td>Mar 2026</td><td>488</td><td>$13,617.00</td><td>$9,940.41</td><td>N/S</td><td>Yes — "momentum again"</td></tr>
-          <tr><td>Apr 2026</td><td>589</td><td>$15,484.00</td><td>$11,344.00</td><td>N/S</td><td>Yes — Short Term Stay Policy introduced same meeting</td></tr>
-          <tr><td>May 2026</td><td>496</td><td>$14,552.00</td><td>$10,623.00</td><td>60%*</td><td>No — tourism framing only</td></tr>
-          <tr class="total"><td>Total</td><td>5,197</td><td>$136,871.00</td><td>~$99,916.00</td><td>—</td><td>—</td></tr>
+          <tr><td>Jun 2025</td><td>207</td><td>$5,747</td><td>$4,195</td><td>No</td></tr>
+          <tr><td>Jul 2025</td><td>219</td><td>$5,272</td><td>$3,849</td><td>No</td></tr>
+          <tr><td>Aug 2025</td><td>213</td><td>$5,236</td><td>$3,822</td><td>Yes — first appearance</td></tr>
+          <tr><td>Sep 2025</td><td>391</td><td>$11,080</td><td>$8,088</td><td>Yes</td></tr>
+          <tr><td>Oct 2025</td><td>464</td><td>$12,296</td><td>$8,976</td><td>Yes</td></tr>
+          <tr><td>Nov 2025</td><td>328</td><td>$8,562</td><td>$6,250</td><td>Yes</td></tr>
+          <tr><td>Dec 2025</td><td>476</td><td>$10,838</td><td>$7,912</td><td>Yes</td></tr>
+          <tr><td>Jan 2026</td><td>544</td><td>$13,340</td><td>$9,738</td><td>Yes — escalating</td></tr>
+          <tr><td>Feb 2026</td><td>782</td><td>$20,370</td><td>$14,870</td><td>Yes</td></tr>
+          <tr><td>Mar 2026</td><td>488</td><td>$13,617</td><td>$9,940</td><td>Yes</td></tr>
+          <tr><td>Apr 2026</td><td>589</td><td>$15,484</td><td>$11,344</td><td>Yes — policy introduced same meeting</td></tr>
+          <tr><td>May 2026</td><td>496</td><td>$14,552</td><td>$10,623</td><td>No — tourism framing only</td></tr>
+          <tr class="total"><td>Total</td><td>5,197</td><td>$136,871</td><td>~$99,916</td><td>9 of 12 months</td></tr>
         </tbody>
       </table>
-      <p style="font-size:0.82rem;color:#777;">N/S = not stated in the report. &nbsp; * May 2026 figure is the CMCA member-to-non-member ratio (3:2 = 60% : 40%) stated in the report, not a percentage of income.</p>
 
-      <h2>May 2026 — the first report after the notices</h2>
-      <p>For May 2026 the park booked 496 site nights for gross income of $14,552, of which the Shire's 73% share was $10,623 — up 50% on May 2025. Bookings were down on April (589 nights) but year-on-year nights still rose 47% (up 158 nights), and CMCA member stays rose 55%. The site-type breakdown was: powered sites 245, ensuite 130, self-contained RVs 78, unpowered river 40, unpowered van 3 (496 total).</p>
-      <p>Notably, this report — the first monthly report after the Short Term Stay Policy and vacation notices were introduced — contains no caretaker reference to longer-term stays, essential workers or the housing shortage, despite such references appearing in every report from August 2025 to April 2026. It is framed solely around short-term tourism. Source: Agenda, Ordinary Council Meeting 25 June 2026, Item 10.4.1, pages 24–27.</p>
+      <h2>Month by month</h2>
 
-      <h2>Key observations</h2>
-      <p>The CMCA caretaker first documented housing-shortage-related demand in August 2025, and did so in every monthly report from then through April 2026 — nine consecutive months before eviction notices were issued.</p>
-      <p>The January 2026 report marks an escalation: CMCA reported a "significant increase in requests for permanent residency" driven by ongoing housing shortages, and recommended reassessing the maximum stay period — not eviction.</p>
-      <p>The February 2026 report documented demand from shearing, health, road works, Water Corporation and mineral exploration workers. A two-month limit with case-by-case extension was the policy at that time — not a blanket eviction policy.</p>
-      <p>The April 2026 report was the last before the Short Term Stay Policy was introduced as Item 10.4.2 at the same meeting. The caretaker's own report did not call for evictions — it called for "actively monitoring" the situation.</p>
-      <p>Over the eleven months to April 2026 the park generated $122,319 in gross income, of which the Shire received about $89,293; with May 2026 added, the totals reach $136,871 and roughly $99,916. Longer-term stays contributed materially to this revenue, which the Short Term Stay Policy risks reducing.</p>
+      <div class="month">
+        <h3>June 2025</h3>
+        <div class="src">Source: Minutes, OCM 31 July 2025, Item 9.4.4. <a href="https://www.boyupbrook.wa.gov.au/documents/1403/council-minutes-31-july-2025">View ↗</a></div>
+        <p class="figures">207 nights · $5,747 gross · Shire share $4,195 · 47% CMCA members. Revenue up 40% on June 2024.</p>
+        <p>No caretaker reference to longer-term stays or the housing shortage at this point.</p>
+      </div>
 
-      <p style="font-size:0.82rem;color:#777;">All figures sourced directly from Shire of Boyup Brook council minutes and agendas. Full month-by-month detail, including caretaker quotes and every site-type breakdown, is in the downloadable PDF above.</p>
+      <div class="month">
+        <h3>July 2025</h3>
+        <div class="src">Source: Minutes, OCM 25 September 2025, Item 9.4.5 (reported two months late). <a href="https://www.boyupbrook.wa.gov.au/documents/1424/council-minutes-25-september-2025">View ↗</a></div>
+        <p class="figures">219 nights · $5,272 gross · Shire share $3,849 · 52% CMCA members. Revenue up 34%, nights up 38% on July 2024.</p>
+        <p>No caretaker reference to longer-term stays or the housing shortage at this point.</p>
+      </div>
+
+      <div class="month">
+        <h3>August 2025</h3>
+        <div class="src">Source: Minutes, OCM 25 September 2025, Item 9.4.6. <a href="https://www.boyupbrook.wa.gov.au/documents/1424/council-minutes-25-september-2025">View ↗</a></div>
+        <p class="figures">213 nights · $5,236 gross · Shire share $3,822 · 30% CMCA members. A "very wet and cold August" noted.</p>
+        <p>The first month the caretaker recorded housing-shortage demand:</p>
+        <blockquote>The CMCA Caretaker reports that there are several patrons supporting the shearing industry and health industry who are seeking longer term accommodation due to the lack of available housing in Boyup Brook. There have also been several families staying overnight who are looking at properties to purchase to relocate to Boyup Brook.</blockquote>
+      </div>
+
+      <div class="month">
+        <h3>September 2025</h3>
+        <div class="src">Source: Minutes, OCM 30 October 2025, Item 13.4.3. <a href="https://www.boyupbrook.wa.gov.au/documents/1436/council-minutes-30-october-2025">View ↗</a></div>
+        <p class="figures">391 nights · $11,080 gross · Shire share $8,088 · 33% CMCA members. Revenue up 29%, nights up 52% on September 2024.</p>
+        <blockquote>There are continued bookings for several patrons supporting the shearing industry and health industry who are seeking longer term accommodation due to the lack of available housing in Boyup Brook.</blockquote>
+        <table>
+          <thead><tr><th>Site type</th><th>Bookings</th></tr></thead>
+          <tbody>
+            <tr><td>Self-Contained RVs (SCV)</td><td>8</td></tr>
+            <tr><td>SCV + Amenities Sites</td><td>76</td></tr>
+            <tr><td>Unpowered Van Sites</td><td>4</td></tr>
+            <tr><td>Powered Sites</td><td>218</td></tr>
+            <tr><td>Ensuite Sites</td><td>85</td></tr>
+            <tr class="total"><td>Total</td><td>391</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="month">
+        <h3>October 2025</h3>
+        <div class="src">Source: Minutes, OCM 27 November 2025, Item 9.4.3. <a href="https://www.boyupbrook.wa.gov.au/documents/1443/council-minutes-27-november-2025">View ↗</a></div>
+        <p class="figures">464 nights · $12,296 gross · Shire share $8,976. Revenue up 29%, nights up 47% on October 2024.</p>
+        <blockquote>There continues to be demand for accommodation for patrons supporting the shearing industry and health industry who are seeking longer term accommodation due to the lack of available housing in Boyup Brook.</blockquote>
+        <table>
+          <thead><tr><th>Site type</th><th>Bookings</th></tr></thead>
+          <tbody>
+            <tr><td>Self-Contained RVs (SCV)</td><td>39</td></tr>
+            <tr><td>SCV + Amenities Sites</td><td>90</td></tr>
+            <tr><td>Unpowered Van Sites</td><td>2</td></tr>
+            <tr><td>Unpowered River Sites</td><td>20</td></tr>
+            <tr><td>Powered Sites</td><td>254</td></tr>
+            <tr><td>Ensuite Sites</td><td>59</td></tr>
+            <tr class="total"><td>Total</td><td>464</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="month">
+        <h3>November 2025</h3>
+        <div class="src">Source: Minutes, OCM 29 January 2026, Item 10.4.3 (combined Nov &amp; Dec report).</div>
+        <p class="figures">328 nights · $8,562 gross · Shire share $6,250 · 33% CMCA members. Revenue down 24%, nights down 19% on November 2024.</p>
+        <blockquote>There continues to be demand for accommodation for patrons supporting the shearing industry and health industry who are seeking longer term accommodation due to the lack of available housing in Boyup Brook.</blockquote>
+        <table>
+          <thead><tr><th>Site type</th><th>Bookings</th></tr></thead>
+          <tbody>
+            <tr><td>Self-Contained RVs (SCV)</td><td>25</td></tr>
+            <tr><td>SCV + Amenities Sites</td><td>71</td></tr>
+            <tr><td>Unpowered Van Sites</td><td>0</td></tr>
+            <tr><td>Unpowered River Sites</td><td>9</td></tr>
+            <tr><td>Powered Sites</td><td>170</td></tr>
+            <tr><td>Ensuite Sites</td><td>53</td></tr>
+            <tr class="total"><td>Total</td><td>328</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="month">
+        <h3>December 2025</h3>
+        <div class="src">Source: Minutes, OCM 29 January 2026, Item 10.4.3 (combined Nov &amp; Dec report).</div>
+        <p class="figures">476 nights · $10,838 gross · Shire share $7,912 · 43% CMCA members. Nights up 15% on December 2024; income down ~9% on a booking-mix shift.</p>
+        <blockquote>There continues to be demand for longer term accommodation from patrons supporting the shearing and health industries, largely due to the ongoing shortage of available housing in Boyup Brook.</blockquote>
+        <table>
+          <thead><tr><th>Site type</th><th>Bookings</th></tr></thead>
+          <tbody>
+            <tr><td>Self-Contained RVs (SCV)</td><td>151</td></tr>
+            <tr><td>SCV + Amenities Sites</td><td>8</td></tr>
+            <tr><td>Unpowered Van Sites</td><td>0</td></tr>
+            <tr><td>Unpowered River Sites</td><td>45</td></tr>
+            <tr><td>Powered Sites</td><td>230</td></tr>
+            <tr><td>Ensuite Sites</td><td>42</td></tr>
+            <tr class="total"><td>Total</td><td>476</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="month">
+        <h3>January 2026</h3>
+        <div class="src">Source: Minutes, OCM 26 February 2026, Item 10.4.3.</div>
+        <p class="figures">544 nights · $13,340 gross · Shire share $9,738 · 45% CMCA members. Revenue up 18%, nights up 39% on January 2025.</p>
+        <p>This report marks an escalation. The caretaker recorded:</p>
+        <blockquote>Demand for longer term accommodation continues to grow, with a significant increase in requests for permanent residency being received. … There has been a notable increase in requests from outlying regions, including metropolitan areas, driven by ongoing housing shortages and affordability.</blockquote>
+        <blockquote>It is recommended that the Shire and CMCA re-assess the maximum stay period … to establish guidelines that are compliant, balanced, and that continue to support those requiring shorter term accommodation, without adversely impacting tourism.</blockquote>
+        <p>The recommendation was to reassess the maximum stay — not to evict.</p>
+      </div>
+
+      <div class="month">
+        <h3>February 2026</h3>
+        <div class="src">Source: Minutes, OCM 26 March 2026, Item 10.4.1.</div>
+        <p class="figures">782 nights · $20,370 gross · Shire share $14,870 · 31% CMCA members. 218 nights during the Country Music Festival. Extrapolated local spend: $50,544.</p>
+        <blockquote>There has also been an increase in patrons seeking long term accommodation of two to three months associated with infrastructure and project works, e.g. road works, Water Corporation projects, and a recent enquiry from a mineral resource exploration company …</blockquote>
+        <blockquote>The current approach is to limit stays to two months, with any extension … considered on a case-by-case basis … with a priority for critical workers and patrons with employment or project works within the Shire.</blockquote>
+      </div>
+
+      <div class="month">
+        <h3>March 2026</h3>
+        <div class="src">Source: Minutes, OCM 30 April 2026, Item 10.4.1.</div>
+        <p class="figures">488 nights · $13,617 gross · Shire share $9,940. Revenue up 41%, nights up 41% on March 2025. Waterwise plumbing upgrades completed ($25,060, funded by Water Corporation).</p>
+        <blockquote>Long term residency requests are primarily associated with essential workers and individuals engaged in local industries such as shearing, infrastructure projects, road works, and health services. In some instances, longer stays are also being sought due to the limited availability of affordable housing within the region.</blockquote>
+      </div>
+
+      <div class="month">
+        <h3>April 2026</h3>
+        <div class="src">Source: Minutes, OCM 28 May 2026 (unconfirmed), Item 10.4.1. <a href="https://www.boyupbrook.wa.gov.au/documents/1485/council-minutes-28-may-2026-(unconfirmed)">View ↗</a></div>
+        <p class="figures">589 nights · $15,484 gross · Shire share $11,344. Revenue up 36.5%, nights up 23% on April 2025. "Occupancy largely driven by longer stay visitors."</p>
+        <p>The last monthly report before the Short Term Stay Policy was introduced at the very same meeting (Item 10.4.2):</p>
+        <blockquote>While the increase in longer term occupancy assists in meeting workforce accommodation needs, it also presents a risk that the Caravan Park may be perceived as facilitating longer term or semi-permanent residency. This is being actively monitored.</blockquote>
+        <table>
+          <thead><tr><th>Site type</th><th>Bookings</th></tr></thead>
+          <tbody>
+            <tr><td>Self-Contained RVs (SCV)</td><td>148</td></tr>
+            <tr><td>SCV + Amenities Sites</td><td>0</td></tr>
+            <tr><td>Unpowered Van Sites</td><td>7</td></tr>
+            <tr><td>Unpowered River Sites</td><td>104</td></tr>
+            <tr><td>Powered Sites</td><td>234</td></tr>
+            <tr><td>Ensuite Sites</td><td>96</td></tr>
+            <tr class="total"><td>Total</td><td>589</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="month">
+        <h3>May 2026 — the first report after the notices</h3>
+        <div class="src">Source: Agenda, OCM 25 June 2026, Item 10.4.1, pages 24–27 (officer's monthly report; confirmed minutes not yet published).</div>
+        <p class="figures">496 nights · $14,552 gross · Shire share $10,623. Shire's revenue up 50% on May 2025; nights up 47% (up 158 nights); CMCA member stays up 55%. Occupancy down on April. Member-to-non-member ratio 3:2 (60% : 40%).</p>
+        <p>Unlike every report from August 2025 to April 2026, this report — the first after the Short Term Stay Policy and the vacation notices were introduced — makes no reference to longer-term stays, essential workers or the housing shortage. It is framed solely around short-term tourism and visitor demand.</p>
+        <table>
+          <thead><tr><th>Site type</th><th>Bookings</th></tr></thead>
+          <tbody>
+            <tr><td>Self-Contained RVs (SCV)</td><td>78</td></tr>
+            <tr><td>SCV + Amenities Sites</td><td>0</td></tr>
+            <tr><td>Unpowered Van Sites</td><td>3</td></tr>
+            <tr><td>Unpowered River Sites</td><td>40</td></tr>
+            <tr><td>Powered Sites</td><td>245</td></tr>
+            <tr><td>Ensuite Sites</td><td>130</td></tr>
+            <tr class="total"><td>Total</td><td>496</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a class="dl-link" href="documents/monthly-data-collation.pdf">Download the full collation (PDF)</a>
+
+      <p style="font-size:0.82rem;color:#777;">All figures are drawn from Shire of Boyup Brook Council minutes and agendas. Income figures are gross; the Shire receives 73% and CMCA 27%.</p>
 
     </main>
+
+    <footer>
+      <div class="updated">Last updated: 28 June 2026.</div>
+    </footer>
+
   </div>
 
 </body>
